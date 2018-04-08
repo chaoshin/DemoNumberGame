@@ -12,6 +12,8 @@
 		A008AE7A207A5B2C00BBD9FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A008AE78207A5B2C00BBD9FB /* Main.storyboard */; };
 		A008AE7C207A5B2D00BBD9FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A008AE7B207A5B2D00BBD9FB /* Assets.xcassets */; };
 		A008AE7F207A5B2D00BBD9FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A008AE7D207A5B2D00BBD9FB /* LaunchScreen.storyboard */; };
+		A008AE87207A679300BBD9FB /* Guess1A2BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A008AE86207A679300BBD9FB /* Guess1A2BViewController.swift */; };
+		A008AE89207A785200BBD9FB /* GuessNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A008AE88207A785200BBD9FB /* GuessNumberViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A008AE7B207A5B2D00BBD9FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A008AE7E207A5B2D00BBD9FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A008AE80207A5B2D00BBD9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A008AE86207A679300BBD9FB /* Guess1A2BViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess1A2BViewController.swift; sourceTree = "<group>"; };
+		A008AE88207A785200BBD9FB /* GuessNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessNumberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				A008AE74207A5B2C00BBD9FB /* AppDelegate.swift */,
 				A008AE76207A5B2C00BBD9FB /* ViewController.swift */,
 				A008AE78207A5B2C00BBD9FB /* Main.storyboard */,
+				A008AE88207A785200BBD9FB /* GuessNumberViewController.swift */,
+				A008AE86207A679300BBD9FB /* Guess1A2BViewController.swift */,
 				A008AE7B207A5B2D00BBD9FB /* Assets.xcassets */,
 				A008AE7D207A5B2D00BBD9FB /* LaunchScreen.storyboard */,
 				A008AE80207A5B2D00BBD9FB /* Info.plist */,
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A008AE77207A5B2C00BBD9FB /* ViewController.swift in Sources */,
+				A008AE89207A785200BBD9FB /* GuessNumberViewController.swift in Sources */,
+				A008AE87207A679300BBD9FB /* Guess1A2BViewController.swift in Sources */,
 				A008AE75207A5B2C00BBD9FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
