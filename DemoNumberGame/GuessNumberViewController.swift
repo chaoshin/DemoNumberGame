@@ -52,26 +52,31 @@ class GuessNumberViewController: UIViewController {
     
     func checkUserInput() {
         if let numberText = guessNumberTextField.text, let number = Int(numberText), let ans = ansNumber {
-            lastChanceNumber -= 1
-            lastChanceLabel.text = "\(lastChanceNumber)" // 顯示剩餘可以猜的次數
-            if number == ansNumber {
-                showAlertMessage(title: "遊戲結束", message: "厲害你答對了!")
-                resetGame() // 回復初始畫面
-            }else if number > ans {
-                maxNumber = number - 1
-                rangeLabel.text = "\(minNumber)到\(maxNumber)"
+            if number > maxNumber || number < minNumber{ // 判斷使用者輸入是否在範圍內
+                showAlertMessage(title: "輸入錯誤", message: "請輸入\(minNumber)-\(maxNumber)之間的數值!")
             }else {
-                minNumber = number + 1
-                rangeLabel.text = "\(minNumber)到\(maxNumber)"
-            }
-            if lastChanceNumber == 0 { // 猜10都錯就結束遊戲
-                gameOver()
-            }else {
-                guessNumberTextField.text = "" // 清除使用者的輸入
-                if lastChanceNumber <= 3 {
-                    lastChanceLabel.textColor = .red
+                lastChanceNumber -= 1
+                lastChanceLabel.text = "\(lastChanceNumber)" // 顯示剩餘可以猜的次數
+                if number == ansNumber {
+                    showAlertMessage(title: "遊戲結束", message: "厲害你答對了!")
+                    resetGame() // 回復初始畫面
+                }else if number > ans {
+                    maxNumber = number - 1
+                    rangeLabel.text = "\(minNumber)到\(maxNumber)"
+                }else {
+                    minNumber = number + 1
+                    rangeLabel.text = "\(minNumber)到\(maxNumber)"
+                }
+                if lastChanceNumber == 0 { // 猜10都錯就結束遊戲
+                    gameOver()
+                }else {
+                    guessNumberTextField.text = "" // 清除使用者的輸入
+                    if lastChanceNumber <= 3 {
+                        lastChanceLabel.textColor = .red
+                    }
                 }
             }
+            
         }
     }
     
